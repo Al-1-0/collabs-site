@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css rules -->
+    <style>
+        body {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            margin: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        h1 {
+            color: rgb(31, 136, 61);
+        }
+        .music-list {
+            list-style: none;
+            padding: 0;
+        }
+        .music-item {
+            margin-bottom: 10px;
+        }
+        .download-link {
+            background: transparent;
+            color: rgb(31, 136, 61);
+            border-radius: 5px;
+            display: inline-block;
+            margin-left: auto;
+        }
+        svg {
+            margin-left: 5px;
+        }
+        .download-link:hover {
+            color: #000000;
+        }
+        .about-section {
+            display: none;
+            max-width: 75vw;
+            margin: 0 auto;
+            transition: opacity 0.3s ease-in-out; /* Add a smooth transition for the opacity property */
+        }
+        .expand-icon {
+            cursor: pointer;
+            transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
+            display: inline-block;
+        }
+        .expanded {
+            transform: rotate(90deg); /* Rotate the icon when the section is expanded */
+        }
+        .expanded:hover {
+            color: rgb(31, 136, 61);
+        }
+        .icon-only {
+            display: inline-block;
+            transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
+        }
+        .expanded .icon-only {
+            transform: rotate(90deg); /* Rotate the icon when the section is expanded */
+        }
+        .thanks-message {
+            display: none;
+            margin-top: 20px;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .words {
+            width: 25vw;
+        }
+    </style>
+</head>
+<body>
+        <h1>compositions for collaboration</h1> 
+        <ul class="music-list">
+            <li class="music-item">
+                <strong class="words">working title: hurt you back</strong>
+                <a class="download-link" href="https://github.com/Al-1-0/Al-1-0-site/raw/main/allanmccafferty_collabs_track_001--hyb.mp3" download><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-download" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"></path></svg></a>
+            </li>
+            <li class="music-item">
+                <strong class="words">working title: beverly</strong>
+                <a class="download-link" href="https://github.com/Al-1-0/Al-1-0-site/raw/main/allanmccafferty_collabs_track_002--beverly.mp3" download><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-download" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"></path></svg></a>
+            </li>
+            <li class="music-item">
+                <strong class="words">working title: maya</strong>
+                <a class="download-link" href="https://github.com/Al-1-0/Al-1-0-site/raw/main/allanmccafferty_collabs_track_003--maya.mp3" download><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-download" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"></path></svg></a>
+            </li>
+            <li class="music-item">
+                <strong class="words">working title: blacklie </strong>
+                <a class="download-link" href="https://github.com/Al-1-0/Al-1-0-site/raw/main/allanmccafferty_collabs_track_004--blacklie.mp3" download><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-download" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"></path></svg></a>
+            </li>
+            <li class="music-item">
+                <strong class="words">working title: innefable</strong>
+                <a class="download-link" href="https://github.com/Al-1-0/Al-1-0-site/raw/main/allanmccafferty_collabs_track_005--innefable.mp3" download><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-download" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"></path></svg></a>
+            </li>
+            <li class="music-item">
+                <strong class="words">working title: leisure</strong>
+                <a class="download-link" href="https://github.com/Al-1-0/Al-1-0-site/raw/main/allanmccafferty_collabs_track_006--leisure.mp3" download><svg aria-hidden="true" focusable="false" role="img" class="octicon octicon-download" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"></path></svg></a>
+            </li>
+            <!-- Add more items as needed -->
+        </ul>
+
+        <div class="thanks-message" id="thanksMessage">
+            downloading :)
+        </div>
+
+        <p style="font-size:75%;">tracks composed by allan mccafferty</p>
+
+        <h4 class="expand-icon" onclick="toggleAboutSection()">
+            <span class="icon-only">▶️</span> About
+        </h4>
+        <div class="about-section" id="aboutSection">
+            <p><a href="mailto:allan@funraisin.co">allan</a> (he/him) is a web developer, digital archivist, and electronic music composer based in glasgow, scotland.
+               he intitally began music exploration as a guitarist in the rock, metal, rap, & psychadelia genres before 
+               discovering an endless world of electronic music - citing all the above as the influences of his 
+               compositions.
+               he has an MA in digital media & information studies and an MSc in mobile web development.
+            </p>
+
+        </div>
+
+    <script>
+        // JavaScript to show thanks message
+        var downloadLinks = document.querySelectorAll('.download-link');
+
+        downloadLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                showThanksMessage();
+            });
+        });
+
+        function showThanksMessage() {
+            var thanksMessage = document.getElementById('thanksMessage');
+            thanksMessage.style.display = 'block';
+
+            // You can customize the duration the message is displayed
+            setTimeout(function() {
+                thanksMessage.style.display = 'none';
+            }, 3000); // 3000 milliseconds (3 seconds) in this example
+        }
+
+        function toggleAboutSection() {
+            var aboutSection = document.getElementById('aboutSection');
+            var expandIcon = document.querySelector('.expand-icon');
+
+            if (aboutSection.style.display === 'none' || aboutSection.style.opacity === '0') {
+                aboutSection.style.display = 'block';
+                setTimeout(function () {
+                    aboutSection.style.opacity = '1';
+                }, 10);
+                expandIcon.classList.add('expanded');
+            } else {
+                aboutSection.style.opacity = '0';
+                setTimeout(function () {
+                    aboutSection.style.display = 'none';
+                }, 300); // Adjust this duration to match the transition duration
+                expandIcon.classList.remove('expanded');
+            }
+        }
+    </script>
+</body>
+</html>
